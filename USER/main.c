@@ -33,7 +33,7 @@
 ***/
 
 #include "stm32f10x.h"
-
+#include "usart.h"
 
 /* 
  * º¯ÊýÃû£ºmain
@@ -43,7 +43,12 @@
  */
 int main(void)
 {
-  	  while(1);
+  
+	USART_Config(9600);
+	
+	printf("Test ON \n");
+	
+	while(1);
 	  // add your code here ^_^¡£
 }
 /******************* (C) COPYRIGHT 2016 Hacker *****END OF FILE************/
